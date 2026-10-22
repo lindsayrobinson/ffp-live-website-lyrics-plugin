@@ -1,0 +1,37 @@
+{
+  "repoName": "fpp-plugin-loe-lyrics",
+  "name": "Live Website Lyrics",
+  "author": "Lights on Elizabeth",
+  "description": "Shares current song and playback timing with a website sing-along display.",
+  "homeURL": "https://github.com/lindsayrobinson/ffp-live-website-lyrics-plugin",
+  "allowUpdates": 1,
+  "version": "1.0.0",
+  "versions": [
+    {
+      "minFPPVersion": "10.2",
+      "maxFPPVersion": "10.99",
+      "branch": "main"
+    }
+  ],
+  "dependencies": {
+    "packages": [
+      "python3"
+    ]
+  },
+  "privacy": {
+    "summary": "Sends song filename, playback state, timing and a session identifier to the configured HTTPS website every two seconds. Does not change FPP playback or lighting.",
+    "sends": [
+      "Current song filename, playback position and state, timestamp and session identifier to the configured website"
+    ],
+    "collects": [],
+    "sensors": [],
+    "remoteAccess": "none",
+    "systemChanges": [
+      "Installs loe-lyrics.service; migrates the existing sender service when present"
+    ],
+    "closedCode": false,
+    "other": "Connection key and sequence mapping are stored privately on this player. Uninstall disables lyrics sending."
+  },
+  "srcURL": "https://github.com/lindsayrobinson/ffp-live-website-lyrics-plugin.git",
+  "bugURL": "https://github.com/lindsayrobinson/ffp-live-website-lyrics-plugin/issues"
+}

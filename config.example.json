@@ -1,0 +1,8 @@
+{
+  "enabled": false,
+  "fpp_url": "http://127.0.0.1",
+  "endpoint": "https://lightsonelizabeth.com/api/lyrics/status",
+  "token": "",
+  "interval_seconds": 2,
+  "sequence_media": {}
+}
